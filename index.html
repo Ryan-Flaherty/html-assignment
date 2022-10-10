@@ -5,18 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+        }
+        h1, h2, footer {
+            background-color: aquamarine;
+        }
+        .site-title {
+            color: red;
+        }
+        #my-image {
+            box-shadow: 0px 0px 2px 1px black;
+        }
+        ul.a {
+            list-style-type: square;
+        }
+        li:nth-child(odd).b {
+            background: forestgreen;
+        }
+        ul.c {
+            list-style-type: none;
+            background-color: coral;
+            border-style: solid;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: darkgreen;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li><a href="note.html">Notes</a></li>
-        </ul>
-    </nav>
-    <h1>
-        Ryan Flaherty
-    </h1>
-    <img src="images/pebbles.jpg" alt="pebbles" width="300">
+    <header>
+        <nav>
+            <ul class="c">
+                <li>Home</li>
+                <li><a href="note.html">Notes</a></li>
+            </ul>
+        </nav>
+        <h1 class="site-title">
+             Ryan Flaherty
+        </h1>
+    </header>
+    <img id="my-image" src="images/pebbles.jpg" alt="pebbles" width="300">
     <article>
         <h2>
             About Me
@@ -30,9 +64,11 @@
                 <em>"North shore of Superior is big"</em>
             </blockquote>
         <h3>Hobbies</h3>
-        <ul>
-            <li>Video Game</li>
-            <li>Curling</li>
+        <ul class="a">
+            <li class="b">Video Game</li>
+            <li class="b">Curling</li>
+            <li class="b">Swiming</li>
+            <li class="b">Skating</li>
         </ul>
     </article>
     <footer>
